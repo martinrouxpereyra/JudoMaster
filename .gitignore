@@ -1,0 +1,16 @@
+# Archivos generados por la compilación
+bin/
+obj/
+
+/packages/
+riderModule.iml
+/_ReSharper.Caches/
+
+# Configuraciones locales de Rider
+.idea/
+
+# Archivos de configuración local
+Properties/launchSettings.json
+
+# Base de datos SQLite (cuando la creemos)
+*.db

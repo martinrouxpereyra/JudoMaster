@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JudoMaster", "JudoMaster\JudoMaster.csproj", "{F87AD7F0-7BDA-4084-B97E-DCE2F95F5601}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F87AD7F0-7BDA-4084-B97E-DCE2F95F5601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F87AD7F0-7BDA-4084-B97E-DCE2F95F5601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F87AD7F0-7BDA-4084-B97E-DCE2F95F5601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F87AD7F0-7BDA-4084-B97E-DCE2F95F5601}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
