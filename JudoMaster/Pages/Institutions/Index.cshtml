@@ -1,0 +1,33 @@
+@page
+@model JudoMaster.Pages.Institutions.IndexModel
+@{
+    ViewData["Title"] = "Instituciones";
+}
+
+<h2>Lista de Instituciones</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Nombre</th>
+        <th>Ubicación</th>
+        <th>Acciones</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var institucion in Model.Institutions)
+    {
+        <tr>
+            <td>@institucion.Name</td>
+            <td>@institucion.Country</td>
+            <td>@institucion.City</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@institucion.Id">Editar</a> |
+                <a asp-page="Delete" asp-route-id="@institucion.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+<a asp-page="Create" class="btn btn-primary">Crear Nueva Institución</a>

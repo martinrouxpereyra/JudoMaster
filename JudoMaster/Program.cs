@@ -1,5 +1,6 @@
 using JudoMaster.Data;
 using Microsoft.EntityFrameworkCore;
+using JudoMaster.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddDbContext<JudoContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("JudoContext")));
+builder.Services.AddScoped<InstitutionService>();
 
 var app = builder.Build();
 

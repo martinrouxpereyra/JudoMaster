@@ -1,7 +1,7 @@
-@*@page
-@model JudoMaster.Pages.Institutions.Create
+@page
+@model JudoMaster.Pages.Institutions.CreateModel
 @{
-    ViewData["Title"] = "Nueva Institución";
+    ViewData["Title"] = "Crear Institución";
 }
 
 <h2>Crear Nueva Institución</h2>
@@ -13,21 +13,19 @@
         <span asp-validation-for="Institution.Name" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label asp-for="Institution.Country">Ubicación</label>
+        <label asp-for="Institution.Country">Pais</label>
         <input asp-for="Institution.Country" class="form-control" />
         <span asp-validation-for="Institution.Country" class="text-danger"></span>
     </div>
-
     <div class="form-group">
-        <label asp-for="Institution.City">Ubicación</label>
+        <label asp-for="Institution.City">Ciudad</label>
         <input asp-for="Institution.City" class="form-control" />
         <span asp-validation-for="Institution.City" class="text-danger"></span>
     </div>
-    
     <button type="submit" class="btn btn-primary">Crear</button>
     <a asp-page="Index" class="btn btn-secondary">Cancelar</a>
 </form>
 
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
-}*@
+}
